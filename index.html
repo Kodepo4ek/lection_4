@@ -12,11 +12,17 @@
 </p></h5>
 
 <script>
-	var hight = prompt('Какая высота треугольника?', '');
-	
-	for( var elem = `x`; elem.length <= hight; elem += `x` ) {
-		console.log(elem);
+	function triangle () {
+		var hight = prompt('Какая высота треугольника?', '');
+		var result = '';
+		for( var elem = `x`; elem.length <= hight; elem += `x` ) {
+			result += elem;
+			result += '\n';
+		}
+		return result
 	}
+	
+	alert(triangle())
 	//console.log(hight, elem)
 </script>
 </body>
